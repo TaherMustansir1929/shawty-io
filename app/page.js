@@ -64,7 +64,7 @@ export default function Home() {
               About Us
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/TaherMustansir1929/shawty-io"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:neon-gold transition-colors"
