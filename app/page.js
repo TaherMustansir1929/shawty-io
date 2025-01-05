@@ -133,7 +133,7 @@ export default function Home() {
       </main>
       <footer className='fixed bottom-0 right-0 glass-effect p-4 text-center text-gray-400 bg-black/20 footer'>
         <Link
-        href="https://www.instagram.com/taher_m.16/"
+        href="https://www.instagram.com/_zeo._.xd_/"
         target='_blank'
         rel='noreferrer noopener'
         className='hover:neon-gold hover:underline transition-colors'
