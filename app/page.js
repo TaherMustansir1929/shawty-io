@@ -57,7 +57,7 @@ export default function Home() {
       <nav className="slide-down fixed w-full z-50 glass-effect">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold neon-gold cursor-pointer">
-            shawty
+            shawty <span className="text-gray-400">io</span>
           </Link>
           <div className="flex items-center space-x-6">
             <Link href="/about-us" className="hover:neon-gold transition-colors font-medium">
@@ -131,6 +131,14 @@ export default function Home() {
           )}
         </div>
       </main>
+      <footer className='fixed bottom-0 right-0 glass-effect p-4 text-center text-gray-400 bg-black/20 footer'>
+        <Link
+        href="https://www.instagram.com/taher_m.16/"
+        target='_blank'
+        rel='noreferrer noopener'
+        className='hover:neon-gold hover:underline transition-colors'
+        > made by - ZeoXD </Link>
+      </footer>
     </div>
   )
 }
