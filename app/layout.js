@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Shawty - Url Shortener',
+  description: 'Shawty is an easy and efficient solution for shortening your URLs. Simplify your links and share them effortlessly.',
 };
 
 export default function RootLayout({ children }) {
