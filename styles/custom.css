@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --neon-gold: #ffd700;
+  --background-color: #0a0a0a;
+  --grid-color: rgba(48, 48, 48, 0.35);
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.8s ease-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.glass-effect {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.cursor-blob {
+  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+}
+/* cubic-bezier(0.25, 0.1, 0.25, 1) */
+
+.grid-background {
+  background-color: var(--background-color);
+  background-image: 
+    radial-gradient(circle at center, rgba(10, 10, 10, 0.1) 0%, rgba(10, 10, 10, 0.6) 50%, var(--background-color) 100%),
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 100% 100%, 30px 30px, 30px 30px;
+  background-position: center center;
+}
+
+.neon-gold {
+  color: var(--neon-gold);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.neon-gold-border {
+  border-color: var(--neon-gold);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.neon-gold-button {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid var(--neon-gold);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.neon-gold-button:hover {
+  background: rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.input-focus {
+  outline: none;
+  border-color: var(--neon-gold);
+  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #252525;
+  border-top: 5px solid var(--neon-gold);
+  border-radius: 50%;
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
